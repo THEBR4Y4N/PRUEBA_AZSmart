@@ -16,6 +16,6 @@ Desarrollar una aplicación web simplificada de gestión de biblioteca utilizand
 #### 5) Registro de libros(Formulario para el ingreso de un autor a la base de datos)
 [![Registrar-autor.png](https://i.postimg.cc/zDtPxd7X/Registrar-autor.png)](https://postimg.cc/5jz30SDZ)
 ### Repositorio:
-
+En el siguiente [Enlace](https://github.com/THEBR4Y4N/PRUEBA_AZSmart "Enlace"), encontraras el repositorio de este proyecto. 
 ### Diagrama Entidad Relación:
 [![Diagrama-entidad-relaci-n.png](https://i.postimg.cc/tCFWsJsQ/Diagrama-entidad-relaci-n.png)](https://postimg.cc/mt2tqb38)
