@@ -9,4 +9,4 @@ Desarrollar una aplicación web simplificada de gestión de biblioteca utilizand
 ### Repositorio:
 
 ### Diagrama Entidad Relación:
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+[![Diagrama-entidad-relaci-n.png](https://i.postimg.cc/tCFWsJsQ/Diagrama-entidad-relaci-n.png)](https://postimg.cc/mt2tqb38)
