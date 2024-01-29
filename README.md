@@ -36,9 +36,8 @@ Para la configuración de la base de datos, se deberán seguir los siguientes pa
 
    - Ejecutar el SQL SERVER
      
-    ** Nota:** en esta se deberá tener una instancia local creada (para este proyecto se utilizó una llamada **"localhost"**) y en esta tener una base de datos llamada **Pruebas** (de ser requerido se deberá crear).
-	 
-	 En caso de no querer utilizar dichas instancias, se pueden usar las que estén disponibles en el momento, pero tanto el nombre de la instancia como el nombre de la base de datos, se deben tener en cuenta para más adelante.
+**Nota:** En esta se deberá tener una instancia local creada (para este proyecto se utilizó una llamada **"localhost"**) y en esta tener una base de datos llamada **Pruebas** (de ser requerido se deberá crear).
+En caso de no querer utilizar dichas instancias, se pueden usar las que estén disponibles en el momento, pero tanto el nombre de la instancia como el nombre de la base de datos, se deben tener en cuenta para más adelante.
 
    - Una vez establecida la conexión con el servidor o instancia del punto anterior, se deberá ejecutar un Script para crear las respectivas tablas, para ello, deberá descargar el siguiente [Archivo](https://drive.google.com/uc?export=download&id=1P69PCjlECmlz2NvWF9CddG8mkNoFckzj "Archivo").
    
