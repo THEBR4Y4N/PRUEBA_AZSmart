@@ -13,7 +13,7 @@ Para el correcto funcionamiento de este proyecto, se deben tener instalados los 
 3. Git
 4. Un editor de texto
    
-###**Instrucciones**: 
+### **Instrucciones**: 
 
 1. Clonar el repositorio
 
