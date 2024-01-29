@@ -62,7 +62,7 @@ Una vez realizados los ítems anteriores,  podremos ejecutar el proyecto, para e
 		"Conexion": "Server=localhost;Database=Pruebas;Trusted_Connection=True;"
 Donde reemplazaremos **Database** = **"Nombre de la base de datos creada"** y **Server** = **"Nombre de la instancia local seleccionada"**
 
-**Nota:**En caso de no haber tenido en cuenta las indicaciones del ítem **2** o de no haber sido ser requerido, saltar al paso siguiente. 
+**Nota:** En caso de no haber tenido en cuenta las indicaciones del ítem **2** o de no haber sido ser requerido, saltar al paso siguiente. 
 
 - Ejecutar el proyecto presionando el botón **F5** en el teclado o ejecutando de la manera tradicional en el Visual Studio.
 
