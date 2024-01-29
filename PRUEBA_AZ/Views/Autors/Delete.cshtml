@@ -8,20 +8,21 @@
 
 <h3>¿Seguro deseas eliminar a este autor?</h3>
 <div>
-    <h4>Autor</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Nombre)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Nombre)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="AutorId" />
-        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-        <a asp-action="Index">Regresar a la lista</a>
+        <button type="submit" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i> Eliminar</button> |
+        <a asp-action="Index" class="btn btn-outline-dark">
+            <i class="fa-solid fa-arrow-left"></i> Regresar a la Lista
+        </a>
     </form>
 </div>

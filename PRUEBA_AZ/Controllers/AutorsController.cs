@@ -98,7 +98,13 @@ namespace PRUEBA_AZ.Controllers
             {
                 try
                 {
-                    _context.Update(autor);
+                    var Autor = await _context.Autors.FindAsync(id);
+                    if (Autor == null)
+                    {
+                        return NotFound();
+                    }
+
+                    _context.Entry(Autor).CurrentValues.SetValues(autor);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
