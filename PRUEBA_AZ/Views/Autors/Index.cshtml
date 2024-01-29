@@ -7,29 +7,32 @@
 <h1>Autores</h1>
 
 <p>
-    <a asp-action="Create">Registrar nuevo autor</a>
+    <a asp-action="Create" class="btn btn-outline-primary">
+        <i class="fas fa-user-plus"></i> Registrar nuevo autor
+    </a>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-bordered">
+    <thead class="thead-light">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
             </th>
-            <th></th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AutorId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.AutorId">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.AutorId">Eliminar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.AutorId" class="btn btn-outline-info"><i class="fa-solid fa-circle-info"></i> Detalles</a>|
+                    <a asp-action="Edit" asp-route-id="@item.AutorId" class="btn btn-outline-warning"><i class="fa-solid fa-pen-to-square"></i> Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.AutorId" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i> Eliminar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

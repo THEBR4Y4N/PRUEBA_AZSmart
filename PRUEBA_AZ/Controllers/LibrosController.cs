@@ -47,7 +47,13 @@ namespace PRUEBA_AZ.Controllers
         // GET: Libros/Create
         public IActionResult Create()
         {
-            ViewData["AutorId"] = new SelectList(_context.Autors, "AutorId", "Nombre");
+            var autores = _context.Autors.ToList();
+            List<SelectListItem> listaDeItems = new List<SelectListItem>
+            {
+              new SelectListItem { Value = "", Text = "Seleccione un autor" } // Opción en blanco
+            };
+            listaDeItems.AddRange(autores.Select(a => new SelectListItem { Value = a.AutorId.ToString(), Text = a.Nombre }));
+            ViewData["AutorId"] = new SelectList(listaDeItems, "Value", "Text");
             return View();
         }
 
@@ -58,7 +64,6 @@ namespace PRUEBA_AZ.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Título,AutorId")] Libro libro)
         {
-            Console.WriteLine(ModelState);
             if (ModelState.IsValid)
             {
                 var autor = await _context.Autors.FindAsync(libro.AutorId);
@@ -84,7 +89,7 @@ namespace PRUEBA_AZ.Controllers
             {
                 return NotFound();
             }
-            ViewData["AutorId"] = new SelectList(_context.Autors, "AutorId", "AutorId", libro.AutorId);
+            ViewData["AutorId"] = new SelectList(_context.Autors, "AutorId", "Nombre", libro.AutorId);
             return View(libro);
         }
 
@@ -104,7 +109,13 @@ namespace PRUEBA_AZ.Controllers
             {
                 try
                 {
-                    _context.Update(libro);
+                    var Libro = await _context.Libros.FindAsync(id);
+                    if (Libro == null)
+                    {
+                        return NotFound();
+                    }
+
+                    _context.Entry(Libro).CurrentValues.SetValues(libro);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -157,14 +168,14 @@ namespace PRUEBA_AZ.Controllers
             {
                 _context.Libros.Remove(libro);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool LibroExists(int id)
         {
-          return (_context.Libros?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Libros?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

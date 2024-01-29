@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace PRUEBA_AZ.Models
 {
@@ -20,6 +21,7 @@ namespace PRUEBA_AZ.Models
         /// <summary>
         /// Nombre del autor
         /// </summary>
+        [Required(ErrorMessage = "El campo Nombre es requerido.")]
         public string? Nombre { get; set; }
 
         public virtual ICollection<Libro> Libros { get; set; }
