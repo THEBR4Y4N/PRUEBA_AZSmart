@@ -8,7 +8,7 @@ Desarrollar una aplicación web simplificada de gestión de biblioteca utilizand
 ### Home (pantalla de inicio)
 [![HOME.png](https://i.postimg.cc/x1cQsJMB/HOME.png)](https://postimg.cc/18hbXzWK)
 ### Libros(Lista de los libros registrados en el sistema)
-[![Libros.png](https://i.postimg.cc/13nx0xZQ/Libros.png)](https://postimg.cc/CRg6YQ1P)3
+[![Libros.png](https://i.postimg.cc/13nx0xZQ/Libros.png)](https://postimg.cc/CRg6YQ1P)
 ### Registro de libros(Formulario para el ingreso de libros con su respectivo autor)
 [![Registrar-Libro.png](https://i.postimg.cc/d3tpLp9g/Registrar-Libro.png)](https://postimg.cc/ftpBPHpv)
 ### Autores(Lista de los libros registrados en el sistema)
