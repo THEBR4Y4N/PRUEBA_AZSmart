@@ -45,8 +45,9 @@ En caso de no querer utilizar dichas instancias, se pueden usar las que estén d
    
    - Una vez ejecutado el Script anterior, podrá validar la existencia de las tablas ejecutando los siguientes comandos:
    
-   		Select * from Autor
-   		Select * from Libros
+   		   Select * from Autor
+     
+   		   Select * from Libros
 
 #### 3. Configuración y Ejecución del proyecto:
 
