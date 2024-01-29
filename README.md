@@ -60,7 +60,7 @@ Una vez realizados los ítems anteriores,  podremos ejecutar el proyecto, para e
 
 - Una vez situados en esta parte, deberemos editar la siguiente línea:
   
-"Conexion": "Server=localhost;Database=Pruebas;Trusted_Connection=True;"
+      "Conexion": "Server=localhost;Database=Pruebas;Trusted_Connection=True;"
 
 Donde reemplazaremos **Database** = **"Nombre de la base de datos creada"** y **Server** = **"Nombre de la instancia local seleccionada"**
 
